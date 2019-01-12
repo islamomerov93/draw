@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp5
 {
-    partial class Form1
+    partial class drawFrm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.showLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // showLbl
+            // drawFrm
             // 
-            this.showLbl.AutoSize = true;
-            this.showLbl.Location = new System.Drawing.Point(331, 169);
-            this.showLbl.Name = "showLbl";
-            this.showLbl.Size = new System.Drawing.Size(32, 13);
-            this.showLbl.TabIndex = 0;
-            this.showLbl.Text = "show";
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.showLbl);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "drawFrm";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Drawing";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label showLbl;
     }
 }
 
